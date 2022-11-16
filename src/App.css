@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-image: url("https://picsum.photos/1600/900");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .navbar {
   display: flex;
   background-color: #497174;
@@ -27,7 +34,8 @@ nav {
   font-weight: bold;
 }
 .login,
-.login-div {
+.login-div,
+.detail {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,26 +56,27 @@ nav {
   border: none;
   border-radius: 10px;
 }
- button {
+button {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
-  background-color:#eff5f5 ;
+  background-color: #eff5f5;
 }
-.search-bar{
+.search-bar {
   padding: 1rem;
   background-color: #eb6440;
   text-align: center;
 }
-.search-bar input, select{
+.search-bar input,
+select {
   padding: 0.5rem 0.8rem;
   border: none;
   border-radius: 10px;
   margin-right: 1rem;
 }
-.card-div{
+.card-div {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -75,7 +84,7 @@ nav {
   justify-content: center;
   gap: 1.5rem;
 }
-.card{
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +92,46 @@ nav {
   gap: 1rem;
   width: 22rem;
   text-align: center;
-  background-color: #D6E4E5;
+  background-color: #d6e4e5;
   padding: 1rem 2rem;
   margin-top: 1rem;
+}
+.info-div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  background-color: #d6e4e5;
+  padding: 2rem;
+  width: 80%;
+  border-radius: 10px;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+.values li{
+  list-style: none;
+}
+.about{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 1rem;
+  color: #eb6440;
+}
+.about-info{
+  width: 60%;
+}
+.about-info a{
+  text-decoration: none;
+  color: white;
+  background-color: #eb6440;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
 }
