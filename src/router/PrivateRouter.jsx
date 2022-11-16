@@ -3,10 +3,10 @@ import { Navigate, Outlet } from 'react-router-dom'
 
 
 function PrivateRouter() {
-  const user = true
+  const userInfo = sessionStorage.getItem("user") 
   return (
     <div>
-      {user ? <Outlet/> : <Navigate to="/login"/> }
+      {userInfo ? <Outlet/> : <Navigate to="/login"/> }
     </div>
   )
 }

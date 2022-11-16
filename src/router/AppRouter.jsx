@@ -13,12 +13,11 @@ function AppRouter() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<PrivateRouter/>}>
-          <Route path="" element={<About/>}/>
+        <Route path="about" element={<PrivateRouter />}>
+          <Route path="" element={<About />} />
         </Route>
-
         <Route path="details" element={<PrivateRouter />}>
-          <Route path="" element={<Details />}/>
+          <Route path="" element={<Details />} />
         </Route>
         <Route path="login" element={<Login />} />
       </Routes>

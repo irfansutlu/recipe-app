@@ -10,7 +10,7 @@ function Navbar() {
       <nav>
         <NavLink className="nav-li" to="/">HOME</NavLink>
         <NavLink className="nav-li" to="about">ABOUT</NavLink>
-        <NavLink className="nav-li" to="login">LOGIN</NavLink>
+        <NavLink className="nav-li" to="login" onClick={()=>sessionStorage.clear()}>{sessionStorage.getItem("user") ? "LOGOUT" : "LOGIN"}</NavLink>
       </nav>
     </div>
   );
